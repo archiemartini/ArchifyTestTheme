@@ -12,6 +12,9 @@
   });
 </script>
 
+<h2>{{ gift_card.balance | money }}</h2>
+<p>{{ gift_card.code }}</p>
+
 {% if gift_card.pass_url %}
   <a href="{{ gift_card.pass_url }}" >
     <img id="apple-wallet-badge"
